@@ -1,0 +1,726 @@
+/* General/Global */
+
+* { 
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+ body {
+ 	background-color: #334249;
+ 	font-family: 'Raleway', sans-serif;
+ }
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: blue;
+}
+
+li {
+	padding: 5px;
+}
+
+/*General/Global */
+
+/* Header */
+
+.header-nav {
+	border: 1px black solid;
+	background-color: #3e4f58;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	overflow: hidden;
+}
+
+.logo {
+	max-height: 100px;
+}
+
+.titulo{text-align: center;
+font-size: 3em;}
+
+.links ul {
+	display: flex;
+	list-style: none;
+	font-size: 1.5em;
+	justify-content: flex-end;
+}
+
+.desplegable-header {
+	display: none;
+}
+
+/* Mobile- Header */
+
+@media only screen and (max-width: 1200px) {
+
+	.header-nav	{
+		display: grid;
+		grid-template-columns: 0.5fr 2fr 0.3fr;
+
+	}
+
+	.logo {
+		height:60px; 
+	}
+
+	.desplegable-header {
+		display: inline;
+		height: 30px;
+		justify-self: flex-end;
+		margin-right: 5px;
+	}
+
+	.titulo {
+		font-size: 2em;
+	}
+
+	.links ul {display: none;}
+}
+
+/*Header*/
+
+/*Home */
+
+.titulo-home {
+	text-align: center;
+	font-size: 3em;
+	padding: 25px 0;
+}
+
+.frontal {
+	margin: 10px auto;
+	width: 60%;
+	display: block;
+}
+
+.seccion-home {
+	overflow: hidden;
+	border: 1px solid black;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	margin: 50px auto;
+	background-color: #3e4f58;
+}
+
+.titulo-texto-seccion {
+	text-align: center;
+}
+
+.titulo-seccion {
+	font-size: 2.5em;
+}
+
+.texto-seccion {
+	text-align: justify;
+	font-size : 2em;
+	width: 20em;
+	margin: 20px;
+}
+
+.img-seccion {width: 54%;}
+
+.seccion-home-2 {
+	overflow: hidden;
+	border: 1px solid black;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	margin: 50px auto;
+	background-color: #3e4f58;
+}
+
+.titulo-texto-seccion-2 {
+	text-align: center;
+}
+
+.titulo-seccion-2 {
+	font-size: 2.5em;
+}
+
+.texto-seccion-2 {
+	text-align: justify;
+	font-size: 2em;
+	width: 15em;
+	margin: 20px;
+	margin-bottom: 20px;
+}
+
+.lista-maquetado {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+
+.link-seccion {
+	border: 1px black solid;
+	padding: 30px;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 2em;
+}
+
+.seccion-home-galeria {
+	overflow: hidden;
+	border: 1px solid black;
+	width: 70%;
+	height: 500px;
+	display: flex;
+	margin: 50px auto;
+	background-color: #3e4f58;
+}
+
+.contenedor-galeria {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titulo-galeria-home {
+	font-size: 3em;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.contenedor-img-galeria {
+	position: relative;
+	width: 150%;
+	display: flex;
+	height: 95%;
+	opacity: 70%;
+}
+
+.img-galeria-home {
+	height: 100%;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.link-galeria {
+	position: absolute;
+	top:37%;
+	left: 35%;
+	background-color: gray;
+	border-radius: 25px;
+	padding: 40px;
+	font-size: 1.5em;
+}
+
+/* Home - Mobile */
+
+@media only screen and (max-width: 1200px) {
+  
+ .titulo-home {
+ font-size: 2em;
+ }
+
+.frontal {
+	width: 95%;
+}
+
+.seccion-home {
+	width: 99%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titulo-seccion {
+	font-size: 1.5em;
+}
+
+.texto-seccion {
+	width: 110%;
+	margin-left: -10px;
+	font-size : 1em;	
+
+}
+
+.img-seccion {
+	width: 120%;
+}
+
+.seccion-home-2 {
+	width: 99%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titulo-seccion-2 {
+	font-size: 1.5em;
+}
+
+.texto-seccion-2 {
+	width: 110%;
+	margin-left: -10px;
+	font-size : 1em;
+	margin-bottom: -5px;
+}
+
+.link-seccion {
+	padding-bottom: 25px;
+	font-size: 1.25em;
+	margin: 15px;
+}
+
+.seccion-home-galeria {
+	width: 99%;
+	height: auto;
+}
+
+.titulo-galeria-home {
+	font-size: 1.5em;
+}
+
+.img-secundaria-galeria { /* Placeholder hasta conseguir
+							un carrousel en Bootstrap */
+	display:none;
+}
+
+.link-galeria {
+	left: 25%;
+	right: 50%;
+	width: 250px;
+	font-size: 1em;}
+
+}
+
+/* Home */
+
+/*Footer*/
+
+footer {
+	border: 1px black solid;
+	background-color: #3e4f58;
+	overflow: hidden;
+}
+
+.contacto {
+	padding: 0 50px;
+	display: flex;
+	justify-content:space-between ;
+	align-items: center;
+}
+
+.titulo-contacto{
+	text-align: center;
+	font-size: 3rem;
+}
+
+.redes-mapa {
+	width: 40%;
+}
+
+.redes ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;}
+
+.img-redes{
+	height: 50px;
+	margin: 10px;
+}
+
+.mapa {
+	width: 100%;
+	height: 150px;
+}
+
+.direcciones-contacto {
+	margin-top: 30px;
+}
+
+.datos-contacto{
+	height: 60px;
+	font-size: 2em;
+}
+
+/* Footer - Mobile */
+
+@media only screen and (max-width: 1200px) {
+
+ .contacto {
+	flex-direction: column;
+ }
+
+ .titulo-contacto{
+	font-size: 1.5rem;
+ }
+
+ .redes-mapa {width: 125%;
+ }
+
+ .redes ul{
+	flex-wrap: wrap;
+	order: 1;
+ }
+
+ .direcciones-contacto {
+	order: 2;
+ }
+
+ .datos-contacto{
+ 	height: auto;
+ 	padding-top: 10px;
+	font-size: 1.25em;
+	margin-bottom: 10px;
+ }
+
+}
+
+/* Footer */
+
+/*reparacion.html y maquetado.html*/
+
+.reparacion-maquetado {
+	background-color: #495c67;
+}
+
+.titulo-reparacion-maquetado{
+	text-align: center;
+	padding: 25px;
+	font-size: 3em;
+}
+
+.subtitulo-reparacion-maquetado {
+	text-align: center;
+	font-size: 2em;
+}
+
+.lista-reparacion-maquetado {
+	width: 800px;
+	margin: 0 auto;
+	font-size: 1.5em;
+	list-style: none;
+}
+
+
+.li-calidad:before {
+   content: url(img/calidad.png);
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: .5em;
+}
+
+.li-calidad {
+	margin-top: 10px;}
+
+.li-garantia:before {
+	content: url(img/garantia.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+}
+
+.li-garantia {
+	margin-top: 10px;}
+
+.li-precio:before {
+	content: url(img/precio.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+}
+
+.li-precio {
+	margin-top: 10px;
+	margin-left: 5px;}
+
+.li-libro:before {
+	content: url(img/libro.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+}
+
+.li-libro {
+	margin-top: 10px;
+}
+
+.ofertas-titulo {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.contenedor-ofertas {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.caja-oferta {
+	padding: 25px;
+	list-style-position: inside;
+	width: 390px;
+	border: 1px black solid;
+	font-size: 1.25em;
+}
+
+.titulo-lista {
+	list-style: none;
+}
+.caja-oferta li{
+	padding: 8px;
+}
+
+.ofertas-fin {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	font-size: 2em;
+}
+
+/*reparacion.html y maquetado.html - Mobile */
+
+@media only screen and (max-width: 1200px) {
+
+ .titulo-reparacion-maquetado{
+	font-size: 2em;
+ }
+
+.subtitulo-reparacion-maquetado {
+	font-size: 1.25em;
+	margin-right: 10px;
+}
+
+.lista-reparacion-maquetado {
+	font-size: 1em;
+	width: 95%;
+}
+
+.ofertas-titulo {
+	font-size: 1.25em;
+}
+
+.contenedor-ofertas {
+	flex-direction: column;
+}
+
+.caja-oferta {
+	width: 95%;
+	font-size: 1.25em;
+	margin-bottom: 25px;
+}
+
+.ofertas-fin {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+}
+/*reparacion.html y maquetado.html*/
+
+/*galeria.html */
+
+.titulo-galeria {
+	text-align: center;
+	font-size: 3em;
+	margin-top: 10px;
+}
+
+.galeria {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;justify-content:space-around;
+	list-style: none;
+}
+
+.img-galeria{
+	margin: 20px 0;
+	padding: 20px 20px;
+	height: 30em;
+	width: 30em;
+	background-color:#3e4f58;
+	border-radius: 25px;
+}
+
+ /* galeria.html - Mobile */
+
+@media only screen and (max-width: 1200px) {
+
+.titulo-galeria {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+.galeria {
+	flex-direction: column;
+}
+
+.img-galeria{
+	margin: 10px 0;
+	margin-left: 5px;
+	padding: 20px  px;
+	width: 96%;
+}
+}
+/*galeria.html*/
+
+/*contacto.html*/
+
+.contacto-html{
+	background-color:#495c67;
+}
+
+.titulo-contacto-html {
+	font-size: 3em;
+	text-align: center;
+}
+
+.contenedor-contacto{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.datos-contacto-html {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+	font-size: 2.25em;
+	padding: 25px 0px;
+	width: 28em;
+}
+
+.mapa-contacto {
+	margin: 25px;
+	width: 60em;
+	height: 20em;
+}
+
+.redes-form {
+	width: 800px;
+}
+
+.texto-redes-form {
+	font-size: 2.5em;
+	margin-left: 225px;
+	margin-top: 50px;
+}
+
+.redes-html ul{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+	margin: 40px 0px;
+}
+
+.img-redes-html{
+	height: 75px;
+	margin: 10px;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 20px;
+}
+
+.label {
+	padding-bottom:10px;
+	font-size: 2.5em;
+}
+
+.textarea {
+	width: 750px;
+	height: 255px;
+	resize: none;
+	font-size: 2em;
+}
+
+.button {
+	width: 750px;
+	height: 25px;
+}
+
+/* contacto.html - Mobile */
+
+@media only screen and (max-width: 1200px) {
+
+.contenedor-contacto{
+	flex-direction: column;
+}
+
+.titulo-contacto-html {
+	padding-top: 10px;
+	font-size: 2.5em;
+}
+
+
+.redes-form {
+	width: auto;
+	order: 1;
+}
+
+.texto-redes-form {
+	font-size: 2em;
+	margin-left: 0px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.img-redes-html{
+	height: 50px;
+}
+
+.contacto-mapa {
+	order: 2;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 20px;
+}
+
+.label {
+	margin-left: -10px;
+	padding-bottom:10px;
+	font-size: 1.25em;
+}
+
+.textarea {
+	width: 90%;
+	height: 150px;
+	font-size: 1.5em;
+}
+
+.button {
+	width: 90%;
+	height: 25px;
+}
+
+.datos-contacto-html {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-size: 1.5em;
+	padding: 10px;
+	width: auto;
+}
+
+.mapa-contacto {
+	margin: 10px;
+	width: 90%;
+	height: auto;
+}
+
+/* contacto.html */
