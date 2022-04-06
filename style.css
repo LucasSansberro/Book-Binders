@@ -66,7 +66,7 @@ li {
 
 @media only screen and (max-width: 1200px) {
 
-	.header-nav {
+	.header-nav {;
 		align-items: start;}
 	.logo {
 		height:60px; 
@@ -77,7 +77,8 @@ li {
 		margin-top: 15px;
 	}
 
-	.links ul {font-size: 0.75em;}
+	.links ul {
+		font-size: 0.75em;}
 }
 
 /*Header*/
@@ -341,7 +342,7 @@ footer {
 }
 
 .lista-reparacion-maquetado {
-	width: 800px;
+	width: 850px;
 	margin: 0 auto;
 	font-size: 1.5em;
 	list-style: none;
@@ -405,7 +406,7 @@ footer {
 .caja-oferta {
 	padding: 25px;
 	list-style-position: inside;
-	width: 390px;
+	width: 450px;
 	border: 1px black solid;
 	font-size: 1.25em;
 }
@@ -422,6 +423,7 @@ footer {
 	padding-bottom: 25px;
 	text-align: center;
 	font-size: 2em;
+	margin-bottom: 0px;
 }
 
 /*reparacion.html y maquetado.html - Mobile */
@@ -439,7 +441,8 @@ footer {
 
 .lista-reparacion-maquetado {
 	font-size: 1em;
-	width: 95%;
+	width: 100%;
+	padding-left: 0px;
 }
 
 .ofertas-titulo {
@@ -452,8 +455,14 @@ footer {
 
 .caja-oferta {
 	width: 95%;
-	font-size: 1.25em;
+	font-size: 1em;
 	margin-bottom: 25px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.caja-oferta ul {
+	padding-left: 15px;
 }
 
 .ofertas-fin {
