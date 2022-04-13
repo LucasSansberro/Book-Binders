@@ -735,17 +735,18 @@ footer {
 
 .datos-contacto-html {
 	padding-top: 20px;
-	font-size: 2.25em;
+	font-size: 2.5em;
 }
 
 .texto-redes-form {
 	font-size: 2.5em;
 }
 
-.mapa {
-	margin-top: 30px;
+.mapa-contacto-html {
+	margin-top: 10px;
 	height: 370px;
 }
+
 .redes-html ul{
 	display: flex;
 	flex-wrap: wrap;
@@ -836,14 +837,18 @@ footer {
 		padding: 10px;
 	}
 
-	.mapa-contacto {
-		margin: 10px;
-		width: 90%;
-		height: auto;
-	}
-
-	.mapa {
+	.mapa-contacto-html {
 		height: 250px;
 	}
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+.textarea {
+		margin-left: 40px;
+	}
+.button {
+		margin-left: 40px;
+	}
+
+	}
 /* contacto.html */
