@@ -1,0 +1,813 @@
+/* General/Global */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #334249 !important;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+a:hover {
+  color: blue !important;
+}
+
+li {
+  padding: 5px;
+}
+
+/* General/Global */
+/* Header */
+.header-nav {
+  border: 1px black solid;
+  background-color: #3e4f58;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.home-nav {
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  max-height: 100px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3em;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.5em;
+  justify-content: flex-end;
+  margin: 0px;
+}
+
+.desplegable-header {
+  display: none;
+}
+
+/* Media Query - Header */
+@media only screen and (max-width: 1200px) {
+  .header-nav {
+    align-items: start;
+    position: sticky;
+    top: 0px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .titulo {
+    font-size: 1em;
+    margin-top: 15px;
+  }
+
+  .links ul {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .logo {
+    height: 80px;
+  }
+
+  .titulo {
+    font-size: 2em;
+  }
+
+  .navbar {
+    margin-top: 10px;
+  }
+
+  .links ul {
+    font-size: 1.25em;
+  }
+}
+/*Header*/
+/*Home */
+.titulo-home {
+  text-align: center;
+  font-size: 3em;
+  padding: 25px 0;
+  font-weight: bold;
+}
+
+.frontal {
+  margin: 10px auto;
+  width: 60%;
+  display: block;
+}
+
+.seccion-home {
+  overflow: hidden;
+  border: 1px solid black;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #3e4f58;
+}
+
+.titulo-texto-seccion {
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.5em;
+}
+
+.texto-seccion {
+  text-align: justify;
+  font-size: 2em;
+  width: 20em;
+  margin: 20px;
+}
+
+.img-seccion {
+  width: 53%;
+}
+
+.seccion-home-2 {
+  overflow: hidden;
+  border: 1px solid black;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #3e4f58;
+}
+
+.titulo-texto-seccion-2 {
+  text-align: center;
+}
+
+.titulo-seccion-2 {
+  font-size: 2.5em;
+}
+
+.texto-seccion-2 {
+  text-align: justify;
+  font-size: 2em;
+  width: 15em;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.lista-maquetado {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.link-seccion {
+  border: 1px black solid;
+  padding: 30px;
+  display: inline-block;
+  font-size: 2em;
+}
+
+.seccion-galeria-home {
+  background-color: #3e4f58;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-galeria-home {
+  padding-top: 10px;
+  margin-bottom: 15px;
+  font-size: 2.5em;
+}
+
+.img-galeria-home {
+  height: 50em;
+}
+
+.texto-galeria-home {
+  font-size: 2em;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer-home {
+  margin-top: 50px;
+}
+
+/* Home - Mobile */
+@media only screen and (max-width: 1200px) {
+  .titulo-home {
+    font-size: 1.75em;
+  }
+
+  .frontal {
+    width: 95%;
+  }
+
+  .seccion-home {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo-seccion {
+    font-size: 1.5em;
+  }
+
+  .texto-seccion {
+    width: 103%;
+    margin-left: -10px;
+    font-size: 1em;
+  }
+
+  .img-seccion {
+    width: 120%;
+  }
+
+  .seccion-home-2 {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo-seccion-2 {
+    font-size: 1.5em;
+  }
+
+  .texto-seccion-2 {
+    width: 103%;
+    margin-left: -10px;
+    font-size: 1em;
+    margin-bottom: -5px;
+  }
+
+  .link-seccion {
+    padding-bottom: 25px;
+    font-size: 1.25em;
+    margin: 15px;
+  }
+
+  .seccion-galeria-home {
+    width: 97%;
+  }
+
+  .titulo-galeria-home {
+    font-size: 1.5em;
+  }
+
+  .texto-galeria-home {
+    font-size: 1em;
+  }
+
+  .img-galeria-home {
+    height: 15em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo-home {
+    font-size: 2.5em;
+  }
+
+  .titulo-seccion {
+    font-size: 2em;
+  }
+
+  .texto-seccion {
+    width: 99%;
+    margin-left: 5px;
+    font-size: 1.5em;
+  }
+
+  .img-seccion {
+    width: 100%;
+  }
+
+  .titulo-seccion-2 {
+    font-size: 2em;
+  }
+
+  .texto-seccion-2 {
+    width: 99%;
+    margin-left: 5px;
+    font-size: 1.5em;
+  }
+
+  .link-seccion {
+    padding-bottom: 25px;
+    font-size: 1.75em;
+    margin: 15px;
+  }
+
+  .seccion-galeria-home {
+    width: 97%;
+  }
+
+  .titulo-galeria-home {
+    font-size: 2em;
+  }
+
+  .texto-galeria-home {
+    font-size: 1.5em;
+  }
+
+  .img-galeria-home {
+    height: 30em;
+  }
+}
+/* Home */
+/*Footer*/
+footer {
+  border: 1px black solid;
+  background-color: #3e4f58;
+  overflow: hidden;
+}
+
+.contacto {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-contacto {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.redes-mapa {
+  width: 40%;
+}
+
+.redes ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.img-redes {
+  height: 50px;
+  margin: 10px;
+}
+
+.mapa {
+  width: 100%;
+  height: 150px;
+}
+
+.direcciones-contacto {
+  margin-top: 30px;
+}
+
+.datos-contacto {
+  height: 60px;
+  font-size: 2em;
+}
+
+/* Footer - Media Query */
+@media only screen and (max-width: 1200px) {
+  .contacto {
+    flex-direction: column;
+  }
+
+  .titulo-contacto {
+    font-size: 1.5rem;
+  }
+
+  .redes-mapa {
+    width: 125%;
+  }
+
+  .redes ul {
+    flex-wrap: wrap;
+    order: 1;
+    justify-content: space-evenly;
+  }
+
+  .direcciones-contacto {
+    order: 2;
+  }
+
+  .datos-contacto {
+    height: auto;
+    padding-top: 10px;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo-contacto {
+    font-size: 2rem;
+  }
+
+  .datos-contacto {
+    font-size: 1.5em;
+  }
+
+  .mapa {
+    width: 80%;
+    margin-left: 100px;
+  }
+}
+/* Footer */
+/*reparacion.html y maquetado.html*/
+.reparacion-maquetado {
+  background-color: #495c67;
+}
+
+.titulo-reparacion-maquetado {
+  text-align: center;
+  padding: 25px;
+  font-size: 3em;
+}
+
+.subtitulo-reparacion-maquetado {
+  text-align: center;
+  font-size: 2em;
+}
+
+.lista-reparacion-maquetado {
+  font-size: 1.7em;
+  list-style: none;
+}
+
+.li-calidad:before {
+  content: url(img/calidad.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-calidad {
+  margin-top: 10px;
+}
+
+.li-garantia:before {
+  content: url(img/garantia.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-garantia {
+  margin-top: 10px;
+}
+
+.li-precio:before {
+  content: url(img/precio.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-precio {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.li-libro:before {
+  content: url(img/libro.png);
+  vertical-align: middle;
+}
+
+.li-libro {
+  margin-top: 10px;
+}
+
+.ofertas-titulo {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.contenedor-ofertas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.caja-oferta {
+  padding: 25px;
+  width: 450px;
+  border: 1px black solid;
+  font-size: 1.25em;
+}
+
+.caja-oferta li {
+  padding: 8px;
+}
+
+.img-oferta {
+  height: 300px;
+}
+
+.ofertas-fin {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+/* Asset de internet / cssbuttons.io by @martinval9 */
+.card {
+  box-shadow: 4px 6px 14px #2F2F42;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  margin-top: -30px;
+}
+
+/*reparacion.html y maquetado.html - Media Query */
+@media only screen and (max-width: 1200px) {
+  .titulo-reparacion-maquetado {
+    font-size: 2em;
+  }
+
+  .subtitulo-reparacion-maquetado {
+    font-size: 1.25em;
+    margin-right: 10px;
+  }
+
+  .lista-reparacion-maquetado {
+    font-size: 0.95em;
+  }
+
+  .ofertas-titulo {
+    font-size: 1.25em;
+  }
+
+  .contenedor-ofertas {
+    flex-direction: column;
+  }
+
+  .caja-oferta {
+    width: 95%;
+    font-size: 1em;
+    margin-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .caja-oferta ul {
+    padding-left: 15px;
+  }
+
+  .img-oferta {
+    height: 200px;
+  }
+
+  .ofertas-fin {
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+  .card:hover {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo-reparacion-maquetado {
+    font-size: 2.5em;
+  }
+
+  .subtitulo-reparacion-maquetado {
+    font-size: 1.5em;
+  }
+
+  .lista-reparacion-maquetado {
+    font-size: 1.5em;
+  }
+
+  .ofertas-titulo {
+    font-size: 2em;
+  }
+
+  .caja-oferta {
+    width: 95%;
+    font-size: 1.5em;
+  }
+
+  .card-title {
+    font-size: 1.5em;
+  }
+
+  .img-oferta {
+    height: 300px;
+  }
+
+  .ofertas-fin {
+    text-align: center;
+    font-size: 2em;
+  }
+}
+/*reparacion.html y maquetado.html*/
+/*galeria.html */
+.titulo-galeria {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.img-galeria {
+  margin: 20px 0;
+  padding: 20px 20px;
+  height: 30em;
+  width: 30em;
+  background-color: #3e4f58;
+  border-radius: 25px;
+}
+
+/* galeria.html - Media Query */
+@media only screen and (max-width: 1200px) {
+  .titulo-galeria {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+
+  .img-galeria {
+    margin: 10px 0;
+    margin-left: -10px;
+    padding: 20px px;
+    width: 96%;
+    height: 22em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo-galeria {
+    font-size: 2.5em;
+  }
+
+  .img-galeria {
+    margin-left: 10px;
+    width: 95%;
+    height: 30em;
+  }
+
+  .card {
+    pointer-events: none;
+  }
+}
+/*galeria.html*/
+/*contacto.html*/
+.contacto-html {
+  background-color: #495c67;
+}
+
+.titulo-contacto-html {
+  font-size: 3em;
+  text-align: center;
+}
+
+.datos-contacto-html {
+  padding-top: 20px;
+  font-size: 2.5em;
+}
+
+.texto-redes-form {
+  font-size: 2.5em;
+}
+
+.mapa-contacto-html {
+  margin-top: 10px;
+  height: 370px;
+}
+
+.redes-html ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin: 40px 0px;
+}
+
+.img-redes-html {
+  height: 75px;
+  margin: 10px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  height: 260px;
+}
+
+.label {
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 1200px) {
+  /*Asset de internet */
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+  button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+  }
+
+  button:active {
+    transform: translateY(-1px);
+  }
+}
+/* contacto.html - Media Query */
+@media only screen and (max-width: 1200px) {
+  .titulo-contacto-html {
+    font-size: 2.5em;
+  }
+
+  .img-redes-html {
+    height: 50px;
+  }
+
+  .label {
+    font-size: 1.25em;
+  }
+
+  .textarea {
+    width: 90%;
+    height: 150px;
+    font-size: 1em;
+    margin-left: 15px;
+  }
+
+  .button {
+    width: 90%;
+    margin-left: 15px;
+    height: 30px;
+  }
+
+  .datos-contacto-html {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .mapa-contacto-html {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .textarea {
+    margin-left: 40px;
+  }
+
+  .button {
+    margin-left: 40px;
+  }
+}
+/* contacto.html */
+
+/*# sourceMappingURL=styles.css.map */
