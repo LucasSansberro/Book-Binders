@@ -15,7 +15,6 @@ a {
   text-decoration: none !important;
   color: black !important;
 }
-
 a:hover {
   color: blue !important;
 }
@@ -24,6 +23,7 @@ li {
   padding: 5px;
 }
 
+/* Para modificar variables ir a _variables.scss */
 /* General/Global */
 /* Header */
 .header-nav {
@@ -58,10 +58,6 @@ li {
   font-size: 1.5em;
   justify-content: flex-end;
   margin: 0px;
-}
-
-.desplegable-header {
-  display: none;
 }
 
 /* Media Query - Header */
@@ -737,7 +733,7 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  /*Asset de internet */
+  /* Asset de internet */
   button {
     padding: 1.3em 3em;
     font-size: 12px;
