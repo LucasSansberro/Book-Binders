@@ -449,7 +449,7 @@ footer {
 }
 
 .li-calidad:before {
-  content: url(img/calidad.png);
+  content: url(../img/calidad.png);
   display: inline-block;
   vertical-align: middle;
 }
@@ -459,7 +459,7 @@ footer {
 }
 
 .li-garantia:before {
-  content: url(img/garantia.png);
+  content: url(../img/garantia.png);
   display: inline-block;
   vertical-align: middle;
 }
@@ -469,7 +469,7 @@ footer {
 }
 
 .li-precio:before {
-  content: url(img/precio.png);
+  content: url(../img/precio.png);
   display: inline-block;
   vertical-align: middle;
 }
@@ -480,7 +480,7 @@ footer {
 }
 
 .li-libro:before {
-  content: url(img/libro.png);
+  content: url(../img/libro.png);
   vertical-align: middle;
 }
 
