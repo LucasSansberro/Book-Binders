@@ -619,19 +619,21 @@ footer {
 }
 
 .titulo-contacto-html {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   font-weight: bold;
+  padding-top: 10px;
 }
 
 .datos-contacto-html {
-  padding-top: 20px;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: bold;
+  padding-left: 50px;
+  padding-top: 75px;
 }
 
 .texto-redes-form {
-  font-size: 2.5em;
+  font-size: 1.75em;
   font-weight: bold;
 }
 
@@ -660,17 +662,13 @@ footer {
 }
 
 .textarea {
-  height: 260px;
+  height: 300px;
   font-weight: bold;
 }
 
 .label {
   padding-bottom: 10px;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.bold {
+  font-size: 1.75em;
   font-weight: bold;
 }
 
@@ -689,6 +687,7 @@ footer {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    font-weight: bold;
   }
 
   button:hover {
@@ -704,15 +703,30 @@ footer {
 /* contacto.html - Media Query */
 @media only screen and (max-width: 1200px) {
   .titulo-contacto-html {
-    font-size: 2.5em;
+    font-size: 1.3em;
+  }
+
+  .direcciones-contacto {
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .texto-redes-form {
+    margin-top: 25px;
+    font-size: 1.25em;
   }
 
   .img-redes-html {
-    height: 50px;
+    height: 30px;
+  }
+
+  .redes-html ul {
+    padding-left: 0;
   }
 
   .label {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   .textarea {
@@ -726,6 +740,7 @@ footer {
     width: 90%;
     margin-left: 15px;
     height: 30px;
+    font-weight: bold;
   }
 
   .datos-contacto-html {
@@ -734,15 +749,50 @@ footer {
   }
 
   .mapa-contacto-html {
-    height: 250px;
+    height: 150px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo-contacto-html {
+    font-size: 2em;
+  }
+
+  .datos-contacto-html {
+    padding-top: 30px;
+    font-size: 1.5em;
+    padding-left: 50px;
+  }
+
+  .texto-redes-form {
+    margin-top: 25px;
+    font-size: 1.5em;
+  }
+
+  .mapa-contacto-html {
+    margin-top: 10px;
+    height: 200px;
+  }
+
+  .redes-html ul {
+    margin: 20px 0px;
+  }
+
+  .img-redes-html {
+    height: 50px;
+    margin: 10px;
+  }
+
+  .label {
+    padding-bottom: 10px;
+    font-size: 1.5em;
+  }
+
   .textarea {
     margin-left: 40px;
   }
 
   .button {
+    font-weight: bold;
     margin-left: 40px;
   }
 }
