@@ -134,14 +134,11 @@ li {
   padding-top: 100px;
 }
 
-.cuadrado-seccion {
-  border: 1px black solid;
-}
-
 .titulo-seccion {
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 20px;
+  background-color: rgba(79, 113, 120, 0.3);
 }
 
 .texto-seccion {
@@ -150,19 +147,23 @@ li {
   text-align: justify;
 }
 
+.fondo-seccion {
+  background-color: rgba(79, 113, 120, 0.1);
+  padding: 30px;
+}
+
 .img-presentacion {
   height: 30em;
 }
 
 .lista-maquetado {
-  margin-left: 280px;
-  margin-bottom: 25px;
+  width: 250px;
+  margin: 0 auto;
 }
 
 .lista:before {
   content: "★";
   margin: 0 1em;
-  /* any design */
 }
 
 .lista {
@@ -205,10 +206,6 @@ li {
   font-weight: bold;
 }
 
-.footer-home {
-  margin-top: 50px;
-}
-
 /* Home - Mobile */
 @media only screen and (max-width: 1200px) {
   .titulo-inicio {
@@ -217,48 +214,31 @@ li {
     padding: 3px;
   }
 
-  .seccion-home {
-    width: 97%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .presentacion {
+    padding-top: 25px;
   }
 
   .titulo-seccion {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .texto-seccion {
-    width: 103%;
-    margin-left: -10px;
-    font-size: 1em;
+    font-size: 0.85em;
   }
 
-  .img-seccion {
-    width: 120%;
+  .fondo-seccion {
+    background-color: rgba(79, 113, 120, 0.1);
+    padding: 10px;
   }
 
-  .seccion-home-2 {
-    width: 97%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .titulo-seccion-2 {
-    font-size: 1.5em;
-  }
-
-  .texto-seccion-2 {
-    width: 103%;
-    margin-left: -10px;
-    font-size: 1em;
-    margin-bottom: -5px;
+  .img-presentacion {
+    height: 15em;
+    margin-top: 10px;
   }
 
   .link-seccion {
-    padding-bottom: 25px;
-    font-size: 1.25em;
+    padding-bottom: 15px;
+    font-size: 0.85em;
     margin: 15px;
   }
 
@@ -267,11 +247,11 @@ li {
   }
 
   .titulo-galeria-home {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .texto-galeria-home {
-    font-size: 1em;
+    font-size: 0.85em;
   }
 
   .img-galeria-home {
@@ -288,23 +268,17 @@ li {
   }
 
   .texto-seccion {
-    width: 99%;
-    margin-left: 5px;
-    font-size: 1.5em;
+    padding: 0 10px;
+    font-size: 1.25em;
   }
 
-  .img-seccion {
-    width: 100%;
+  .img-presentacion {
+    margin-top: 30px;
   }
 
-  .titulo-seccion-2 {
-    font-size: 2em;
-  }
-
-  .texto-seccion-2 {
-    width: 99%;
-    margin-left: 5px;
-    font-size: 1.5em;
+  .lista-maquetado {
+    width: 200px;
+    margin: 0 auto;
   }
 
   .link-seccion {
@@ -335,93 +309,46 @@ footer {
   border: 1px black solid;
   background-color: #E4AF8E;
   overflow: hidden;
+}
+
+.titulo-footer {
+  font-size: 2em;
   font-weight: bold;
-}
-
-.contacto {
-  padding: 0 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.titulo-contacto {
-  text-align: center;
-  font-size: 3rem;
-}
-
-.redes-mapa {
-  width: 40%;
+  text-decoration: underline;
+  padding-top: 5px;
+  letter-spacing: 4px;
 }
 
 .redes ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
 }
 
 .img-redes {
-  height: 50px;
-  margin: 10px;
-}
-
-.mapa {
-  width: 100%;
-  height: 150px;
-}
-
-.direcciones-contacto {
-  margin-top: 30px;
-}
-
-.datos-contacto {
-  height: 60px;
-  font-size: 2em;
+  margin: 0 30px;
+  height: 30px;
 }
 
 /* Footer - Media Query */
 @media only screen and (max-width: 1200px) {
-  .contacto {
-    flex-direction: column;
+  .titulo-footer {
+    font-size: 0.85em;
   }
 
-  .titulo-contacto {
-    font-size: 1.5rem;
-  }
-
-  .redes-mapa {
-    width: 125%;
-  }
-
-  .redes ul {
-    flex-wrap: wrap;
-    order: 1;
-    justify-content: space-evenly;
-  }
-
-  .direcciones-contacto {
-    order: 2;
-  }
-
-  .datos-contacto {
-    height: auto;
-    padding-top: 10px;
-    font-size: 1.25em;
-    margin-bottom: 10px;
+  .img-redes {
+    margin: 0 10px;
+    height: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .titulo-contacto {
-    font-size: 2rem;
-  }
-
-  .datos-contacto {
+  .titulo-footer {
     font-size: 1.5em;
   }
 
-  .mapa {
-    width: 80%;
-    margin-left: 100px;
+  .img-redes {
+    margin: 0 10px;
+    height: 30px;
   }
 }
 /* Footer */
@@ -432,21 +359,19 @@ footer {
 }
 
 .titulo-reparacion-maquetado {
-  text-align: center;
   margin-top: 25px;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 .subtitulo-reparacion-maquetado {
-  text-align: center;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: bold;
   margin-top: 10px;
 }
 
 .lista-reparacion-maquetado {
-  font-size: 1.7em;
+  font-size: 1.5em;
   list-style: none;
 }
 
@@ -555,7 +480,7 @@ footer {
   }
 
   .lista-reparacion-maquetado {
-    font-size: 0.95em;
+    font-size: 0.85em;
   }
 
   .ofertas-titulo {
@@ -630,7 +555,7 @@ footer {
 /*galeria.html */
 .titulo-galeria {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   margin-top: 10px;
   margin-bottom: 30px;
   font-weight: bold;
