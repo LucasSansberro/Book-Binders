@@ -23,8 +23,8 @@
 	<header class="header-nav sticky-top">
 	<nav class="navbar navbar-expand-lg navbar-light">
   		<img class="logo" src="img/logo-book-binders.png" alt="Logotipo Book Binders">
-		<p class="titulo ps-5 ms-5 mt-2"> Book Binders </p>
-		<button id="botonAbrirCarrito" class="botonAbrirCarrito ps-5 ms-5">
+		<p class="titulo ps-md-2 ms-md-3 mt-md-3"> Book Binders </p>
+		<button id="botonAbrirCarrito" class="botonAbrirCarrito ps-md-4 ms-md-3 mt-md-2">
 			<i class="fa-solid fa-cart-shopping fa-2x"></i><span id="cantidadCarrito" class="cantidadCarrito">0</span>
 		</button>
     	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -74,7 +74,8 @@
 	</section>
 
 	<section id="reparacion" class="reparacion-maquetado">
-		<h1 class="titulo-reparacion-maquetado text-center">Reparación</h1>
+		<div class="fondo-seccion">
+		<h1 class="titulo-reparacion-maquetado text-center titulo-seccion">Reparación</h1>
 		<h2 class="subtitulo-reparacion-maquetado text-center">¿Por qué elegir Book Binders para reparar sus libros?</h2>
 		<div class="container-fluid">
 			<div class="row justify-content-center">
@@ -116,12 +117,15 @@
   				</ul>
 			</div>
 		</div>
-		<h3 class="ofertas-titulo">¿Querés hacer una compra express?</h3>
+		<h3 class="ofertas-titulo mt-5">¿Querés hacer una compra express?</h3>
 		<h4 class="ofertas-titulo">Simplemente presioná sobre el item que quieras para agregarlo al carrito</h4>
+		<h4 class="ofertas-titulo">Recordá que siempre nos podés consultar para conocer otrsa opciones</h4>
+	</div>
 	</section>
 
 	<section id="maquetado" class="reparacion-maquetado">
-		<h1 class="titulo-reparacion-maquetado text-center">Maquetado</h1>
+		<div class="fondo-seccion">
+		<h1 class="titulo-reparacion-maquetado text-center titulo-seccion">Maquetado</h1>
 		<h2 class="subtitulo-reparacion-maquetado text-center">¿Por qué elegir Book Binders para encuadernar sus libros?</h2>
 		<div class="container-fluid">
 			<div class="row justify-content-center">
@@ -162,8 +166,10 @@
   				</ul>
 			</div>
 		</div>
-		<h3 class="ofertas-titulo">¿Querés hacer una compra express?</h3>
+		<h3 class="ofertas-titulo mt-5">¿Querés hacer una compra express?</h3>
 		<h4 class="ofertas-titulo">Simplemente presioná sobre el item que quieras para agregarlo al carrito</h4>
+		<h4 class="ofertas-titulo">Recordá que siempre nos podés consultar para conocer otras opciones</h4>
+	</div>
 	</section>
 
 	<div id="overlayCuadroScripts" class="overlayCuadroScripts"><b>
@@ -175,7 +181,7 @@
 	  				</ul>
 	  			</div>
 	  			<div class="col-lg-4 col-xl-4 botonesDiv divBotonesScript justify-content-around">
-	  				<button class="botonCerrarCarrito crema" id="botonCerrarCarrito"><i class="fa-solid fa-x"></i></button>
+	  				<button class="botonCerrarCarrito crema botonesDiv" id="botonCerrarCarrito"><i class="fa-solid fa-x"></i></button>
 	  				<p id="textoPrecioFinal" class="text-center botonesDiv crema estiloTextoPrecio">Precio final: $0</p>
 	  				<button class="btn botonesDiv crema col-12 botonEliminar" id="botonVaciador">
 	  					<span>Vaciar carrito</span>
@@ -195,7 +201,7 @@
 		</div></b>
 	</div>
 
-	<section id="galeria" class="seccion-galeria-home">
+	<section id="galeria" class="seccion-galeria-home mt-2">
 		<h2 class="titulo-galeria-home">Galería</h2>
 		<div class="container">
 			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -222,7 +228,7 @@
 		</div>
 	</section>
 
-	<section id="contacto">
+	<section id="contacto" class="contacto">
   		<h1 class="titulo-contacto">Contacto</h1>
   		<div class="container contenedor-contacto">
   			<div class="row justify-content-around">
@@ -266,16 +272,6 @@
 	<footer class="footer-home container-fluid">
 		<div class="text-center titulo-footer">
 			<p>¡No te olvides de seguirnos!</p>
-		</div>
-		<div class="redes">
-			<ul>
-				<li><a class="link-contacto" href="https://twitter.com/home" target="_blank"><img class="img-redes" src="img/icono-twitter.png" alt="Ícono Twitter"></a></li>
-				<li><a class="link-contacto" href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="img-redes" src="img/icono-whatsapp.png"alt="Ícono WhatsApp"></a></li>
-				<li><a class="link-contacto" href="https://www.tiktok.com/es/" target="_blank"><img class="img-redes" src="img/icono-tiktok.png" alt="Ícono TikTok"></a></li>
-				<li><a class="link-contacto" href="https://instagram.com" target="_blank"><img class="img-redes" src="img/icono-instagram.png" alt="Ícono Instagram"></a></li>
-				<li><a class="link-contacto" href="https://facebook.com" target="_blank"><img class="img-redes" src="img/icono-facebook.png" alt="Ícono Facebook"></a></li>
-				<li><a class="link-contacto" href="https://www.linkedin.com/feed/" target="_blank"><img class="img-redes" src="img/icono-linkedin.png" alt="Ícono LinkedIn"></a></li>
-			</ul>	
 		</div>
 	</footer>
 

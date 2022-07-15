@@ -41,7 +41,7 @@ li {
 }
 
 html {
-  scroll-padding-top: 120px;
+  scroll-padding-top: 100px;
 }
 
 /* Para modificar variables ir a _variables.scss */
@@ -169,6 +169,8 @@ html {
 .fondo-seccion {
   background-color: rgba(79, 113, 120, 0.1);
   padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .img-seccion {
@@ -284,6 +286,11 @@ html {
 }
 /* Home */
 /* contacto.html */
+
+.contacto {
+  margin-bottom: 40px;
+}
+
 .titulo-contacto {
   text-align: center;
   padding: 40px 0;
@@ -404,6 +411,7 @@ html {
   z-index: 20;
   padding: 20px;
   margin: -20px;
+  color: black;
 }
 .link-contacto-html:hover {
   color: black !important;
@@ -637,10 +645,10 @@ footer {
   padding: 20px;
   background-color: #E4AF8E;
   overflow: hidden;
-  width: 50%;
+  width: 65%;
   position: fixed;
-  top: 12%;
-  right: 25%;
+  top: 14vh;
+  right: 15vw;
   z-index: 500;
   transition: all 0.3s linear;
   transform: translateX(150%)
@@ -687,8 +695,8 @@ footer {
 }
 
 .estiloTextoPrecio {
-	height: 34px;
-	padding-top: 5px
+  margin-bottom: 0px;
+  padding: 10px;
 }
 
 .botonDeEnvio {
@@ -783,10 +791,14 @@ footer {
   }
 
   .cuadroScripts{
- 	width:95%
+ 	width:95%;
+  top: 3vh;
+  right: 3vw;
+
   } 
   .cuadroCarrito {
- 	min-height: 275px
+ 	min-height: 275px;
+  
   }
 	
   .listaCarrito{
@@ -798,6 +810,16 @@ footer {
     text-align: center;
     font-size: 1.25em;
   }
+  .botonAgregarEliminar {
+  width: 25px;
+  font-size: 5px;
+  font: inherit
+}
+.botonesDiv{
+  padding: 5px;
+  font-size: 0.85em;
+  margin-top: 3px;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -837,10 +859,22 @@ footer {
   }
 
   .cuadroScripts {
-  	width: 65%
+  	width: 65%;
+    top: 3vh;
+  right: 15vw;
   }
+   .botonAgregarEliminar {
+  width: 50px;
+  font-size: 10px;
+  font: inherit
+}
+.botonesDiv{
+  padding: 5px;
+  font-size: 0.9em;
+  margin-top: 3px;
+}
 
-  .textoListaCarrito{font-size: 1.5em;}
+  .textoListaCarrito{font-size: 1.25em;}
 }
 
 /*reparacion.html y maquetado.html*/
