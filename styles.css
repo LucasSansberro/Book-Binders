@@ -794,7 +794,6 @@ footer {
  	width:95%;
   top: 0vh;
   right: 3vw;
-  padding-top: 1px;
 
   } 
   .cuadroCarrito {
@@ -816,9 +815,13 @@ footer {
   font: inherit
 }
 .botonesDiv{
-  padding: 5px;
+  padding: 0px;
   font-size: 0.85em;
   margin-top: 3px;
+}
+.envioCarrito {
+  height: 20px;
+  padding-bottom: 10px;
 }
 }
 
