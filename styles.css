@@ -792,7 +792,7 @@ footer {
 
   .cuadroScripts{
  	width:95%;
-  top: 3vh;
+  top: 0vh;
   right: 3vw;
 
   } 
@@ -812,7 +812,6 @@ footer {
   }
   .botonAgregarEliminar {
   width: 20px;
-  font-size: 3px;
   font: inherit
 }
 .botonesDiv{
