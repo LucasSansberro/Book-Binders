@@ -21,25 +21,53 @@
 <body>
 
 	<header class="header-nav sticky-top">
-	<nav class="navbar navbar-expand-lg navbar-light">
-  		<img class="logo" src="img/logo-book-binders.png" alt="Logotipo Book Binders">
-		<p class="titulo ps-md-2 ms-md-3 mt-md-3"> Book Binders </p>
-		<button id="botonAbrirCarrito" class="botonAbrirCarrito ps-md-4 ms-md-3 mt-md-2">
-			<i class="fa-solid fa-cart-shopping fa-2x"></i><span id="cantidadCarrito" class="cantidadCarrito">0</span>
-		</button>
-    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    	<div class="collapse navbar-collapse links justify-content-end" id="navbarNav">
-      		<ul class="navbar-nav text-end">
-        		<li class="nav-item"><a class="nav-link"  href="#inicio">Inicio</a></li>
-        		<li class="nav-item"><a class="nav-link" href="#reparacion">Reparación</a></li>
-        		<li class="nav-item"><a class="nav-link" href="#maquetado">Maquetado</a></li>
-        		<li class="nav-item"><a class="nav-link"  href="#galeria">Galería</a></li>
-        		<li class="nav-item"><a class="nav-link"  href="#contacto">Contacto</a></li>
-      		</ul>
-    	</div>
-	</nav>
-</header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+  			<img class="logo" src="img/logo-book-binders.png" alt="Logotipo Book Binders">
+			<p class="titulo ps-md-2 ms-md-3 mt-md-3"> Book Binders </p>
+			<button id="botonAbrirCarrito" class="botonAbrirCarrito ps-md-4 ms-md-3 mt-md-2">
+				<i class="fa-solid fa-cart-shopping fa-2x"></i><span id="cantidadCarrito" class="cantidadCarrito">0</span>
+			</button>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    		<div class="collapse navbar-collapse links justify-content-end" id="navbarNav">
+      			<ul class="navbar-nav text-end">
+        			<li class="nav-item"><a class="nav-link"  href="#inicio">Inicio</a></li>
+        			<li class="nav-item"><a class="nav-link" href="#reparacion">Reparación</a></li>
+        			<li class="nav-item"><a class="nav-link" href="#maquetado">Maquetado</a></li>
+        			<li class="nav-item"><a class="nav-link"  href="#galeria">Galería</a></li>
+        			<li class="nav-item"><a class="nav-link"  href="#contacto">Contacto</a></li>
+      			</ul>
+    		</div>
+		</nav>
+	</header>
 
+	<div id="overlayCuadroScripts" class="overlayCuadroScripts"><b>
+		<div id="cuadroScripts" class="container cuadroScripts">
+	  		<div class="row justify-content-between">
+	  			<div class="col-lg-8 col-xl-8 cuadroCarrito">
+	  				<ul id="listaCarrito" class=" listaCarrito">
+	  					<!-- Entra li por JS -->
+	  				</ul>
+	  			</div>
+	  			<div class="col-lg-4 col-xl-4 d-flex flex-column justify-content-around">
+	  				<button class="botonesCarrito crema" id="botonCerrarCarrito"><i class="fa-solid fa-x"></i></button>
+	  				<button class="botonesCarrito crema col-12 fw-bold" id="botonOrdenador">
+	  					<span>Ordenar por precio de menor a mayor</span>
+	  				</button>
+	  				<button class="botonesCarrito crema fw-bold" id="botonVaciador">
+	  					<span>Vaciar carrito</span>
+	  				</button>
+	  				<p id="textoPrecioFinal" class="text-center crema botonesCarrito">Precio final: $0</p>
+	    			<form id="contact-form" role="form">
+	      				<button class="botonesCarrito crema botonDeEnvio col-12" id="botonDeEnvio" type="submit" value="SEND">
+	        				<div class="animacion-botonDeEnvio">
+	          					<i class="fa fa-paper-plane"></i><span class="texto-botonDeEnvio texto-boton">Enviar</span>
+	        				</div>
+	      				</button>
+	    			</form>
+	    		</div>
+	    	</div>		
+		</div></b>
+	</div>
 
 	<section id="inicio" class="portada">
 		<div class="filtro-portada">
@@ -48,7 +76,7 @@
         </div>
     </section>
 
-	<section class="container-fluid separacion-seccion">
+	<section class="container-fluid presentacion">
 		<div class="row justify-content-around align-items-center">
 			<div class="col-xl-6 col-12 fondo-seccion">
 				<h2 class="titulo-seccion text-center">¿Quiénes somos? </h2>
@@ -73,133 +101,104 @@
 		</div>
 	</section>
 
-	<section id="reparacion" class="reparacion-maquetado">
+	<section id="reparacion" class="reparacion-maquetado"><b>
 		<div class="fondo-seccion">
-		<h1 class="titulo-reparacion-maquetado text-center titulo-seccion">Reparación</h1>
-		<h2 class="subtitulo-reparacion-maquetado text-center">¿Por qué elegir Book Binders para reparar sus libros?</h2>
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<ul class="lista-reparacion-maquetado col-lg-5 col-md-9">
-					<li class="li-calidad">Materiales de primera calidad</li>
-					<li class="li-garantia">Garantía asegurada por dos años</li>
-					<li class="li-libro">Conservamos el material original</li>
-					<li class="li-precio">Precios accesibles</li>
-				</ul>
+			<h1 class="titulo-reparacion-maquetado text-center titulo-seccion">Reparación</h1>
+			<h2 class="subtitulo-reparacion-maquetado text-center">¿Por qué elegir Book Binders para reparar sus libros?</h2>
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<ul class="lista-reparacion-maquetado col-lg-5 col-md-9">
+						<li class="li-calidad li-margin">Materiales de primera calidad</li>
+						<li class="li-garantia li-margin">Garantía asegurada por dos años</li>
+						<li class="li-libro li-margin">Conservamos el material original</li>
+						<li class="li-precio li-margin">Precios accesibles</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<h3 class="ofertas-titulo">Algunas de nuestras ofertas:</h3>
-		<div class="contenedor-ofertas">
-			<div class="card caja-oferta clarisimo"> 
-  				<img class="card-img-top img-oferta" src="img/reparacion-paperback.jpg" alt="Libro de tapa blanda siendo reparado">
-  				<div class="card-body">
-    				<h5 class="card-title">En rústica</h5>
-  				</div>
-  				<ul id="ulRustica"class="list-group list-group-flush"> 
-  					<!-- Entra li por JS -->
-  				</ul>
+			<h3 class="ofertas-titulo">Algunas de nuestras ofertas:</h3>
+			<div class="contenedor-ofertas">
+				<div class="card caja-oferta clarisimo"> 
+  					<img class="card-img-top img-oferta" src="img/reparacion-paperback.jpg" alt="Libro de tapa blanda siendo reparado">
+  					<div class="card-body">
+    					<h5 class="card-title fw-bold">En rústica</h5>
+  					</div>
+  					<ul id="ulRustica"class="list-group list-group-flush"> 
+  						<!-- Entra li por JS -->
+  					</ul>
+				</div>
+				<div class="card caja-oferta clarisimo"> 
+  					<img class="card-img-top img-oferta" src="img/reparacion-cartone.jpg" alt="Libro con lomo de tela siendo limpiado">
+  					<div class="card-body">
+    					<h5 class="card-title fw-bold">En cartoné</h5>
+  					</div>
+  					<ul id="ulCartone" class="list-group list-group-flush"> 
+  						<!-- Entra li por JS -->
+  					</ul>
+				</div>
+				<div class="card caja-oferta clarisimo"> 
+  					<img class="card-img-top img-oferta" src="img/reparacion-cuero.png" alt="Libro cosido en cuero siendo reparado">
+  					<div class="card-body">
+    					<h5 class="card-title fw-bold">Cosido en cuero</h5>
+  					</div>
+  					<ul id="ulCuero" class="list-group list-group-flush"> 
+    					<!-- Entra li por JS -->
+  					</ul>
+				</div>
 			</div>
-			<div class="card caja-oferta clarisimo"> 
-  				<img class="card-img-top img-oferta" src="img/reparacion-cartone.jpg" alt="Libro con lomo de tela siendo limpiado">
-  				<div class="card-body">
-    				<h5 class="card-title">En cartoné</h5>
-  				</div>
-  				<ul id="ulCartone" class="list-group list-group-flush"> 
-  					<!-- Entra li por JS -->
-  				</ul>
-			</div>
-			<div class="card caja-oferta clarisimo"> 
-  				<img class="card-img-top img-oferta" src="img/reparacion-cuero.png" alt="Libro cosido en cuero siendo reparado">
-  				<div class="card-body">
-    			<h5 class="card-title">Cosido en cuero</h5>
-  				</div>
-  				<ul id="ulCuero" class="list-group list-group-flush"> 
-    				<!-- Entra li por JS -->
-  				</ul>
-			</div>
-		</div>
-		<h3 class="ofertas-titulo mt-5">¿Querés hacer una compra express?</h3>
-		<h4 class="ofertas-titulo">Simplemente presioná sobre el item que quieras para agregarlo al carrito</h4>
-		<h4 class="ofertas-titulo">Recordá que siempre nos podés consultar para conocer otrsa opciones</h4>
-	</div>
-	</section>
-
-	<section id="maquetado" class="reparacion-maquetado">
-		<div class="fondo-seccion">
-		<h1 class="titulo-reparacion-maquetado text-center titulo-seccion">Maquetado</h1>
-		<h2 class="subtitulo-reparacion-maquetado text-center">¿Por qué elegir Book Binders para encuadernar sus libros?</h2>
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<ul class="lista-reparacion-maquetado col-lg-5 col-md-9">
-					<li class="li-calidad">Materiales de primera calidad</li>
-					<li class="li-libro">Variedad de diseños</li>
-					<li class="li-precio">Precios accesibles</li>
-				</ul>
-			</div>
-		</div>
-		<h3 class="ofertas-titulo">Algunas de nuestras ofertas:</h3>
-		<div class="contenedor-ofertas">
-			<div class="card caja-oferta clarisimo"> 
-  				<img class="card-img-top img-oferta" src="img/maquetado-papel.jpg" alt="Pilas de papel apiladas">
-  				<div class="card-body">
-    				<h5 class="card-title">Tamaño</h5>
-  				</div>
-  				<ul id="ulTamano"class="list-group list-group-flush"> 
-  					<!-- Entra li por JS -->
-  				</ul>
-			</div>
-			<div class="card caja-oferta clarisimo"> 
-  				<img class="card-img-top img-oferta" src="img/maquetado-costura.jpg" alt="Un par de libros con encuadernación japonesa">
-  				<div class="card-body">
-    				<h5 class="card-title">Costuras</h5>
-  				</div>
-  				<ul id="ulCosturas" class="list-group list-group-flush"> 
-  					<!-- Entra li por JS -->
-  				</ul>
-			</div>
-			<div class="card caja-oferta clarisimo"> 
-  				<img class="card-img-top img-oferta" src="img/maquetado-cuadriculado.jpg" alt="Distintos tipos de hojas apiladas">
-  				<div class="card-body">
-    			<h5 class="card-title">Papel</h5>
-  				</div>
-  				<ul id="ulPapel" class="list-group list-group-flush"> 
-    				<!-- Entra li por JS -->
-  				</ul>
-			</div>
-		</div>
-		<h3 class="ofertas-titulo mt-5">¿Querés hacer una compra express?</h3>
-		<h4 class="ofertas-titulo">Simplemente presioná sobre el item que quieras para agregarlo al carrito</h4>
-		<h4 class="ofertas-titulo">Recordá que siempre nos podés consultar para conocer otras opciones</h4>
-	</div>
-	</section>
-
-	<div id="overlayCuadroScripts" class="overlayCuadroScripts"><b>
-		<div id="cuadroScripts" class="container cuadroScripts">
-	  		<div class="row justify-content-between">
-	  			<div class="col-lg-8 col-xl-8 cuadroCarrito">
-	  				<ul id="listaCarrito" class=" listaCarrito">
-	  					<!-- Entra li por JS -->
-	  				</ul>
-	  			</div>
-	  			<div class="col-lg-4 col-xl-4 botonesDiv divBotonesScript justify-content-around">
-	  				<button class="botonCerrarCarrito crema botonesDiv" id="botonCerrarCarrito"><i class="fa-solid fa-x"></i></button>
-	  				<p id="textoPrecioFinal" class="text-center botonesDiv crema estiloTextoPrecio">Precio final: $0</p>
-	  				<button class="btn botonesDiv crema col-12 botonEliminar" id="botonVaciador">
-	  					<span>Vaciar carrito</span>
-	  				</button>
-	  				<button class="btn botonesDiv crema col-12 botonEliminar" id="botonOrdenador">
-	  					<span>Ordenar por precio de menor a mayor</span>
-	  				</button>
-	    			<form id="contact-form" role="form">
-	      				<button class="btn botonesDiv crema botonDeEnvio col-12" id="botonDeEnvio" type="submit" value="SEND">
-	        				<div class="animacion-botonDeEnvio">
-	          					<i class="fa fa-paper-plane"></i><span class="texto-botonDeEnvio">Enviar</span>
-	        				</div>
-	      				</button>
-	    			</form>
-	    		</div>
-	    	</div>		
+			<h3 class="ofertas-titulo mt-5">¿Querés hacer una compra express?</h3>
+			<h4 class="ofertas-titulo">Simplemente presioná sobre el item que quieras para agregarlo al carrito</h4>
+			<h4 class="ofertas-titulo">Recordá que siempre nos podés consultar para conocer otrsa opciones</h4>
 		</div></b>
-	</div>
+	</section>
+
+	<section id="maquetado" class="reparacion-maquetado"><b>
+		<div class="fondo-seccion">
+			<h1 class="titulo-reparacion-maquetado text-center titulo-seccion">Maquetado</h1>
+			<h2 class="subtitulo-reparacion-maquetado text-center">¿Por qué elegir Book Binders para encuadernar sus libros?</h2>
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<ul class="lista-reparacion-maquetado col-lg-5 col-md-9">
+						<li class="li-calidad li-margin">Materiales de primera calidad</li>
+						<li class="li-libro li-margin">Variedad de diseños</li>
+						<li class="li-precio li-margin">Precios accesibles</li>
+					</ul>
+				</div>
+			</div>
+			<h3 class="ofertas-titulo">Algunas de nuestras ofertas:</h3>
+			<div class="contenedor-ofertas">
+				<div class="card caja-oferta clarisimo"> 
+  					<img class="card-img-top img-oferta" src="img/maquetado-papel.jpg" alt="Pilas de papel apiladas">
+  					<div class="card-body">
+    					<h5 class="card-title fw-bold">Tamaño</h5>
+  					</div>
+  					<ul id="ulTamano"class="list-group list-group-flush"> 
+  						<!-- Entra li por JS -->
+  					</ul>
+				</div>
+				<div class="card caja-oferta clarisimo"> 
+  					<img class="card-img-top img-oferta" src="img/maquetado-costura.jpg" alt="Un par de libros con encuadernación japonesa">
+  					<div class="card-body">
+    					<h5 class="card-title fw-bold">Costuras</h5>
+  					</div>
+  					<ul id="ulCosturas" class="list-group list-group-flush"> 
+  						<!-- Entra li por JS -->
+  					</ul>
+				</div>
+				<div class="card caja-oferta clarisimo"> 
+  					<img class="card-img-top img-oferta" src="img/maquetado-cuadriculado.jpg" alt="Distintos tipos de hojas apiladas">
+  					<div class="card-body">
+    					<h5 class="card-title fw-bold">Papel</h5>
+  					</div>
+  					<ul id="ulPapel" class="list-group list-group-flush"> 
+    					<!-- Entra li por JS -->
+  					</ul>
+				</div>
+			</div>
+			<h3 class="ofertas-titulo mt-5">¿Querés hacer una compra express?</h3>
+			<h4 class="ofertas-titulo">Simplemente presioná sobre el item que quieras para agregarlo al carrito</h4>
+			<h4 class="ofertas-titulo">Recordá que siempre nos podés consultar para conocer otras opciones</h4>
+		</div></b>
+	</section>
 
 	<section id="galeria" class="seccion-galeria-home mt-2">
 		<h2 class="titulo-galeria-home">Galería</h2>

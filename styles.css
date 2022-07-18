@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 /* General/Global */
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 * {
   margin: 0;
@@ -27,15 +29,12 @@ li {
 .oscuro {
   background-color: #4F7178;
 }
-
 .claro {
   background-color: #E4AF8E;
 }
-
 .clarisimo {
   background-color: #E2C18B;
 }
-
 .crema {
   background-color: #F2DEBD;
 }
@@ -44,7 +43,6 @@ html {
   scroll-padding-top: 100px;
 }
 
-/* Para modificar variables ir a _variables.scss */
 /* General/Global */
 /* Header */
 
@@ -89,6 +87,7 @@ html {
 
 /* Media Query - Header */
 @media only screen and (max-width: 1200px) {
+
   .logo {
     height: 60px;
   }
@@ -106,7 +105,9 @@ html {
     font-size: 0.85em;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
+
   .logo {
     height: 80px;
   }
@@ -123,9 +124,180 @@ html {
     font-size: 1.25em;
   }
 }
+
 /*Header*/
 
-/*Home */
+/*Overlay Carrito */
+
+.overlayCuadroScripts {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+  background: rgba(17, 79, 113, 0.4705882353);
+  z-index: 400;
+  visibility: hidden;
+}
+
+.cuadroScripts {
+  padding: 20px;
+  background-color: #E4AF8E;
+  overflow: hidden;
+  width: 65%;
+  position: fixed;
+  top: 12vh;
+  right: 16vw;
+  z-index: 500;
+  transition: all 0.3s linear;
+  transform: translateX(150%)
+}
+
+.mostrarCarrito {
+  transform: translateX(0);
+}
+
+.fondoTransparente {
+  visibility: visible;
+}
+
+.cuadroCarrito {
+  border: 1px solid black;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.listaCarrito {
+  list-style: none;
+  font-size: 1.25em;
+  margin-top: 10px;
+  padding-left: 0px;
+}
+
+.botonesCarrito {
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.botonAgregarEliminar {
+  width: 50px;
+}
+
+.botonDeEnvio {
+  height: 34px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.texto-botonDeEnvio {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.animacion-botonDeEnvio {
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.animacion-botonDeEnvio:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+.inputSweetAlert {
+  letter-spacing: 0.15em;
+  font-weight: bold;
+}
+
+/*Overlay Carrito - Media Query */
+
+@media only screen and (max-width: 769px) {
+
+  .cuadroScripts {
+    padding: 5px;
+    width:90%;
+    top: 0vh;
+    right: 3vw;
+  }
+
+  .cuadroCarrito {
+    height: 77vh;
+  }
+    
+  .listaCarrito {
+    font-size: 0.65em;
+    margin-top: 5px;
+  }
+
+  .botonAgregarEliminar {
+    width: 20px;
+  }
+
+  .botonesCarrito {
+    padding: 0px;
+    font-size: 0.85em;
+    margin-top: 3px;
+    margin-bottom: 1px;
+  }
+
+  .botonDeEnvio {
+    height: 20px;
+    transition: none;
+  }
+  
+  .animacion-botonDeEnvio:hover {
+    transform: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .cuadroScripts {
+    padding: 10px;
+    width:80%;
+    top: 5vh;
+    right: 5vw;
+  }
+
+  .cuadroCarrito {
+    height: 70vh;
+  }
+    
+  .listaCarrito {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  .botonAgregarEliminar {
+    width: 30px;
+  }
+
+  .botonesCarrito {
+    padding: 5px;
+    font-size: 1em;
+    margin-top: 3px;
+    margin-bottom: 1px;
+  }
+
+  .botonDeEnvio {
+    height: 30px;
+    transition: none;
+  }
+}
+
+@media (hover: none) {
+  .fa-paper-plane {
+    display: none;
+  }
+}
+
+/*Overlay Carrito*/
+
+/*Inicio y presentación */
+
 .portada {
   background-image: url("img/img-frontal.jpg");
   background-size: cover;
@@ -149,7 +321,7 @@ html {
   padding: 5px;
 }
 
-.separacion-seccion {
+.presentacion {
   padding-top: 100px;
 }
 
@@ -183,10 +355,10 @@ html {
   margin: 0 auto;
   text-align: center;
   margin-top: 100px;
+  padding: 25px;
 }
 
 .titulo-galeria-home {
-  padding-top: 10px;
   margin-bottom: 15px;
   font-size: 2.5em;
   font-weight: bold;
@@ -196,22 +368,16 @@ html {
   height: 50em;
 }
 
-.texto-galeria-home {
-  font-size: 2em;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  font-weight: bold;
-}
-
-/* Home - Mobile */
+/* Inicio y presentación - Mobile */
 @media only screen and (max-width: 1200px) {
+
   .titulo-portada {
     background-color: rgba(79, 113, 120, 0.8);
     font-size: 1.1em;
     padding: 3px;
   }
 
-  .separacion-seccion {
+  .presentacion {
     padding-top: 25px;
   }
 
@@ -224,7 +390,6 @@ html {
   }
 
   .fondo-seccion {
-    background-color: rgba(79, 113, 120, 0.1);
     padding: 10px;
   }
 
@@ -241,15 +406,13 @@ html {
     font-size: 1.25em;
   }
 
-  .texto-galeria-home {
-    font-size: 0.85em;
-  }
-
   .img-galeria-home {
     height: 15em;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+
   .titulo-portada {
     font-size: 2.5em;
   }
@@ -276,16 +439,185 @@ html {
     font-size: 2em;
   }
 
-  .texto-galeria-home {
-    font-size: 1.5em;
-  }
-
   .img-galeria-home {
     height: 30em;
   }
 }
-/* Home */
-/* contacto.html */
+
+/* Inicio y presentación */
+
+/*Reparacion y maquetado*/
+
+.titulo-reparacion-maquetado {
+  margin-top: 25px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.subtitulo-reparacion-maquetado {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.lista-reparacion-maquetado {
+  font-size: 1.5em;
+  list-style: none;
+}
+
+.li-margin {
+  margin-top: 10px;
+}
+
+.li-precio {
+  margin-left: 5px;
+}
+
+.li-calidad:before {
+  content: url(img/calidad.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-garantia:before {
+  content: url(img/garantia.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-precio:before {
+  content: url(img/precio.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-libro:before {
+  content: url(img/libro.png);
+  vertical-align: middle;
+}
+
+.card {
+  box-shadow: 4px 6px 14px #2F2F42;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.contenedor-ofertas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.caja-oferta {
+  padding: 25px;
+  width: 450px;
+  border: 1px black solid;
+  font-size: 1.25em;
+}
+
+.caja-oferta li {
+  padding: 8px;
+}
+
+.img-oferta {
+  height: 300px;
+}
+
+.ofertas-titulo {
+  text-align: center;
+  font-size: 1.75em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/*Reparacion y maquetado - Media Query */
+
+@media only screen and (max-width: 1200px) {
+  .titulo-reparacion-maquetado {
+    font-size: 2em;
+  }
+
+  .subtitulo-reparacion-maquetado {
+    font-size: 1.25em;
+    margin-right: 10px;
+  }
+
+  .lista-reparacion-maquetado {
+    font-size: 0.85em;
+  }
+
+  .ofertas-titulo {
+    font-size: 1.25em;
+  }
+
+  .contenedor-ofertas {
+    flex-direction: column;
+  }
+
+  .caja-oferta {
+    width: 95%;
+    font-size: 1em;
+    margin-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .caja-oferta ul {
+    padding-left: 15px;
+  }
+
+  .img-oferta {
+    height: 200px;
+  }
+
+  .ofertas-fin {
+    text-align: center;
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+ 
+  .titulo-reparacion-maquetado {
+    font-size: 2.5em;
+  }
+
+  .subtitulo-reparacion-maquetado {
+    font-size: 1.5em;
+  }
+
+  .lista-reparacion-maquetado {
+    font-size: 1.5em;
+  }
+
+  .ofertas-titulo {
+    font-size: 2em;
+  }
+
+  .caja-oferta {
+    width: 75%;
+    font-size: 1.5em;
+  }
+
+  .card-title {
+    font-size: 1.5em;
+  }
+
+  .img-oferta {
+    height: 300px;
+  }
+
+  .ofertas-fin {
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
+/*Reparacion y maquetado*/
+
+/* contacto */
 
 .contacto {
   margin-bottom: 40px;
@@ -422,6 +754,7 @@ html {
 }
 
 /* Contacto - Media Query */
+
 @media only screen and (max-width: 1200px) {
   .titulo-contacto {
     padding: 25px 0;
@@ -451,6 +784,7 @@ html {
     margin-left: 20px;
   }
 }
+
 @media (hover: none) {
   .fa-paper-plane {
     display: none;
@@ -460,8 +794,11 @@ html {
     margin-top: 0px;
   }
 }
-/* Contacto.html */
+
+/* Contacto */
+
 /*Footer*/
+
 footer {
   border: 1px black solid;
   background-color: #E4AF8E;
@@ -488,6 +825,7 @@ footer {
 }
 
 /* Footer - Media Query */
+
 @media only screen and (max-width: 1200px) {
   .titulo-footer {
     font-size: 0.85em;
@@ -503,7 +841,9 @@ footer {
     height: 20px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+
   .titulo-footer {
     font-size: 1.5em;
   }
@@ -515,373 +855,3 @@ footer {
 }
 
 /* Footer */
-
-/*reparacion.html y maquetado.html*/
-
-.reparacion-maquetado {
-  background-color: #F2DEBD;
-  font-weight: bold;
-}
-
-.titulo-reparacion-maquetado {
-  margin-top: 25px;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.subtitulo-reparacion-maquetado {
-  font-size: 1.75em;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.lista-reparacion-maquetado {
-  font-size: 1.5em;
-  list-style: none;
-}
-
-.li-calidad:before {
-  content: url(img/calidad.png);
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.li-calidad {
-  margin-top: 10px;
-}
-
-.li-garantia:before {
-  content: url(img/garantia.png);
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.li-garantia {
-  margin-top: 10px;
-}
-
-.li-precio:before {
-  content: url(img/precio.png);
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.li-precio {
-  margin-top: 10px;
-  margin-left: 5px;
-}
-
-.li-libro:before {
-  content: url(img/libro.png);
-  vertical-align: middle;
-}
-
-.li-libro {
-  margin-top: 10px;
-}
-
-.ofertas-titulo {
-  text-align: center;
-  font-size: 1.75em;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-weight: bold;
-}
-
-/* Asset de internet / cssbuttons.io by @martinval9 */
-.card {
-  box-shadow: 4px 6px 14px #2F2F42;
-  border-radius: 3px;
-  transition: all 0.3s;
-}
-
-.card-title {
-  font-weight: bold;
-}
-
-.contenedor-ofertas {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.caja-oferta {
-  padding: 25px;
-  width: 450px;
-  border: 1px black solid;
-  font-size: 1.25em;
-}
-
-.caja-oferta li {
-  padding: 8px;
-}
-
-.img-oferta {
-  height: 300px;
-}
-
-/* Elementos de JavaScript */
-
-.botonDeScript {
-	background: none;
-	border: none;
-	font: inherit;
-}
-
-.overlayCuadroScripts {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.06s linear;
-  background: rgba(17, 79, 113, 0.4705882353);
-  z-index: 400;
-  visibility: hidden;
-}
-
-.cuadroScripts {
-  padding: 20px;
-  background-color: #E4AF8E;
-  overflow: hidden;
-  width: 65%;
-  position: fixed;
-  top: 14vh;
-  right: 15vw;
-  z-index: 500;
-  transition: all 0.3s linear;
-  transform: translateX(150%)
-}
-
-.mostrarCarrito {
-  transform: translateX(0);
-}
-.fondoTransparente {
-  visibility: visible;
-}
-
-.botonCerrarCarrito {
-  padding: 5px;
-  margin-right: 0px;
-  border: 0;
-}
-
-.cuadroCarrito {
-	border: 1px solid black;
-	min-height: 720px;
-	overflow: hidden;
-}
-
-.listaCarrito {
-	list-style: none;
-	font-size: 1.25em;
-	padding: 0px;
-	margin-top: 20px;
-}
-
-.divBotonesScript { 
-	display:flex;
-	flex-direction: column;
-	justify-content: space-evenly; 
-}
-
-.botonesDiv{
-	margin-top: 10px
-}
-
-.botonEliminar{
-	font: inherit;
-}
-
-.estiloTextoPrecio {
-  margin-bottom: 0px;
-  padding: 10px;
-}
-
-.botonDeEnvio {
-	height: 34px;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
-}
-
-.animacion-botonDeEnvio {
-  height: 34px;
-  transition: all 0.2s ease-in-out;
-}
-
-.texto-botonDeEnvio {
-  display: block;
-  margin-top: 5px;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-.textoListaCarrito{
-	display: inline
-}
-
-.botonAgregarEliminar {
-	width: 50px;
-	font-size: 20px;
-	font: inherit
-}
-
-.animacion-botonDeEnvio:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-.inputSweetAlert {
-  letter-spacing: 0.15em;
-  font-weight: bold;
-}
-
-@media (hover: none) {
-  .fa-paper-plane {
-    display: none;
-  }}
-
-/*Elementos JS - Fin */
-
-.ofertas-fin {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 0px;
-}
-
-/*reparacion.html y maquetado.html - Media Query */
-@media only screen and (max-width: 1200px) {
-  .titulo-reparacion-maquetado {
-    font-size: 2em;
-  }
-
-  .subtitulo-reparacion-maquetado {
-    font-size: 1.25em;
-    margin-right: 10px;
-  }
-
-  .lista-reparacion-maquetado {
-    font-size: 0.85em;
-  }
-
-  .ofertas-titulo {
-    font-size: 1.25em;
-  }
-
-  .contenedor-ofertas {
-    flex-direction: column;
-  }
-
-  .caja-oferta {
-    width: 95%;
-    font-size: 1em;
-    margin-bottom: 25px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .caja-oferta ul {
-    padding-left: 15px;
-  }
-
-  .img-oferta {
-    height: 200px;
-  }
-
-  .cuadroScripts{
- 	width:95%;
-  top: 0vh;
-  right: 3vw;
-  padding-top: 1px;
-
-  } 
-  .cuadroCarrito {
- 	min-height: 275px;
-  
-  }
-	
-  .listaCarrito{
-	font-size: 0.65em;
-	margin-top: 10px;
-  }
-
-  .ofertas-fin {
-    text-align: center;
-    font-size: 1.25em;
-  }
-  .botonAgregarEliminar {
-  width: 20px;
-  font: inherit
-}
-.botonesDiv{
-  padding: 0px;
-  font-size: 0.85em;
-  margin-top: 3px;
-}
-.envioCarrito {
-  height: 20px;
-  padding-bottom: 10px;
-}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
- 
-  .titulo-reparacion-maquetado {
-    font-size: 2.5em;
-  }
-
-  .subtitulo-reparacion-maquetado {
-    font-size: 1.5em;
-  }
-
-  .lista-reparacion-maquetado {
-    font-size: 1.5em;
-  }
-
-  .ofertas-titulo {
-    font-size: 2em;
-  }
-
-  .caja-oferta {
-    width: 75%;
-    font-size: 1.5em;
-  }
-
-  .card-title {
-    font-size: 1.5em;
-  }
-
-  .img-oferta {
-    height: 300px;
-  }
-
-  .ofertas-fin {
-    text-align: center;
-    font-size: 2em;
-  }
-
-  .cuadroScripts {
-  	width: 65%;
-    top: 3vh;
-  right: 15vw;
-  }
-   .botonAgregarEliminar {
-  width: 50px;
-  font-size: 10px;
-  font: inherit
-}
-.botonesDiv{
-  padding: 5px;
-  font-size: 0.9em;
-  margin-top: 3px;
-}
-.envioCarrito {
-  height: inherit;
-  padding-bottom: inherit;
-}
-  .textoListaCarrito{font-size: 1.25em;}
-}
-
-/*reparacion.html y maquetado.html*/
