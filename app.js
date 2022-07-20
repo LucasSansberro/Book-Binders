@@ -1,4 +1,4 @@
-class TipoDeReparacion {
+class Producto {
   constructor (id, nombre, precio, categoria){
     this.id = parseInt(id)
     this.nombre = nombre
@@ -32,7 +32,7 @@ const cargaJson = async () => {
   const datosJson = await fetchJson.json()
   opcionesDeReparacion = datosJson.record
   opcionesDeReparacion = opcionesDeReparacion.map(element => {
-    return new TipoDeReparacion(element.id,element.nombre,element.precio,element.categoria)
+    return new Producto(element.id,element.nombre,element.precio,element.categoria)
   })
 //Cargamos el listado al DOM
   for (const opcion of opcionesDeReparacion) {
@@ -185,9 +185,7 @@ botonDeEnvio.addEventListener("click", function () {
   }
 })
 
-botonAbrirCarrito.addEventListener("click", mostrarCarrito)
-botonCerrarCarrito.addEventListener("click", ocultarCarrito)
-
+//Agregamos funciones para mostrar y ocultar el carrito
 function mostrarCarrito(){
   overlayCuadroScripts.classList.add("fondoTransparente");
   cuadroScripts.classList.add("mostrarCarrito");
@@ -197,3 +195,6 @@ function ocultarCarrito(){
   overlayCuadroScripts.classList.remove("fondoTransparente");
   cuadroScripts.classList.remove("mostrarCarrito");
 }
+
+botonAbrirCarrito.addEventListener("click", mostrarCarrito)
+botonCerrarCarrito.addEventListener("click", ocultarCarrito)
